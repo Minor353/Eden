@@ -1,0 +1,35 @@
+header.header
+  .header_wrap
+    .logo
+      a(href="index.html")
+        img(src="assets/images/content/logo.png", alt="logo")
+    nav.nav
+      ul.nav_wrap
+        li.nav_item
+          a(href="/").nav_item-link Главная
+        li.nav_item
+          a(href="about.html").nav_item-link О нас
+        li.nav_item
+          a(href="price.html").nav_item-link Цены
+        li.nav_item
+          a(href="catalog-list.html").nav_item-link Товары
+        li.nav_item
+          a(href="services.html").nav_item-link Услуги
+        li.nav_item
+          a(href="contact.html").nav_item-link Контакты
+    .header_contact
+      img(src="assets/images/icons/phone.svg", alt="phone").header_contact-img
+      a(href="tel:+380960241602").header_contact-link +380960241602 
+      .nav_mobile
+        .overlay
+          nav.overlayMenu
+            ul(role='menu')
+              li
+                a(href='about.html', role='menuitem') О нас
+              li
+                a(href='services.html', role='menuitem') Услуги
+              li
+                a(href='catalog.html', role='menuitem') Каталог
+              li
+                a(href='contact.html', role='menuitem') Контакты
+        #navToggle.navBurger(role='navigation')

@@ -1,0 +1,42 @@
+.clients--main-ps {
+  margin-top: 140px;
+}
+
+.clients--about-ps {
+  margin-top: 140px;
+}
+
+.clients_wrap {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clients_item {
+  list-style-type: none;
+  width: 15%;
+  height: min-content;
+  margin-bottom: 80px;
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .clients_item {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .clients_item {
+    width: 50%;
+  }
+}

@@ -1,0 +1,46 @@
+.seo-text_wrap {
+  max-width: 1170px;
+  padding: 20px;
+  padding-right: 80px;
+  box-sizing: border-box;
+  margin: 100px auto;
+  border: 1px solid #161B1F;
+  position: relative;
+}
+
+.seo-text_title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.seo-text_content {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.seo-text_btn {
+  width: 40px;
+  height: 40px;
+  background: #FEFDFB;
+  border: 1px solid #161B1F;
+  border-radius: 50px;
+  position: absolute;
+  right: -21px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url('../images/icons/cross.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  cursor: pointer;
+}

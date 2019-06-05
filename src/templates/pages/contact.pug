@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Tehno-Dnepr || Контакты
+    link(rel="stylesheet", href="assets/styles/app.min.css")
+  body
+    .wrapper
+      include ../includes/header.pug  
+      main.main
+        section.contact-main
+          .contact-main_content
+            h4.contact-main_content-title Наши контакты
+            ul.contact-main_content-list
+              li.contact-main_list-item
+                .contact-main_list-img
+                  img(src="assets/images/icons/treasure-map.svg", alt="icon")
+                .contact-main_list-data
+                  .contact-main_data-title Адрес
+                  .contact-main_data-text пр. Яворницкого, 111 г. Днепр
+              li.contact-main_list-item
+                .contact-main_list-img
+                  img(src="assets/images/icons/clock.svg", alt="icon")
+                .contact-main_list-data
+                  .contact-main_data-title график работы
+                  .contact-main_data-text Вторник-воскресенье с 10:00 до 17:00
+              li.contact-main_list-item
+                .contact-main_list-img
+                  img(src="assets/images/icons/smartphone.svg", alt="icon")
+                .contact-main_list-data
+                  .contact-main_data-title Телефон
+                  .contact-main_data-text +380960241602
+              li.contact-main_list-item
+                .contact-main_list-img
+                  img(src="assets/images/icons/envelope.svg", alt="icon")
+                .contact-main_list-data
+                  .contact-main_data-title Email
+                  .contact-main_data-text example@mail.com
+          .contact-main_map
+            #map
+        section.instagram--contact-ps
+          include ../includes/_instagram.pug
+      include ../includes/footer.pug  

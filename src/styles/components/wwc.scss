@@ -1,0 +1,147 @@
+.wwc_wrap {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  margin-top: 120px;
+}
+
+.wwc_content-title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.wwc_content-text {
+  column-count: 2;
+  column-width: 570px;
+  column-gap: 30px;
+}
+
+.wwc_content {
+  margin-bottom: 80px;
+}
+
+.wwc_list {
+  justify-content: space-between;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.wwc_list-item {
+  list-style-type: none;
+  padding: 20px 60px;
+  padding-right: 15px;
+  width: 280px;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #FFFFFF;
+  box-shadow: 0px 5px 20px rgba(50, 50, 50, 0.15);
+  transition: 0.3s;
+}
+
+.wwc_item-img {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.wwc_item-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: normal;
+  margin-bottom: 30px;
+  color: #3E3E3E;
+  position: relative;
+  z-index: 15;
+}
+
+.wwc_item-link {
+  position: relative;
+  z-index: 16;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #26293C;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 5px 24px;
+  border: 2px solid transparent;
+  display: block;
+  width: max-content;
+  transition: 0.1s;
+}
+
+
+.wwc_list-item:hover {
+  background-color: #505269;
+  box-shadow: 0px 0px 1px rgba(50, 50, 50, 0.05);
+  transition: 0.3s;
+
+  .wwc_item-img {
+    opacity: 0.2;
+  }
+
+  .wwc_item-title {
+    color: #FFFFFF;
+  }
+
+  .wwc_item-link {
+    border: 2px solid #EF4C23;
+    background-color: #EF4C23;
+    color: #FFFFFF;
+    transition: 0.3s;
+  }
+
+  .wwc_item-link:hover {
+    background-color: #fff;
+    color: #EF4C23;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .wwc_list {
+    flex-wrap: wrap;
+  }
+
+  .wwc_list-item {
+    width: 49%;
+    margin-bottom: 20px;
+  }
+
+  .wwc_item-title {
+    text-align: right;
+  }
+
+  .wwc_item-link {
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .wwc_wrap {
+    margin-top: 40px;
+  }
+
+  .wwc_list-item {
+    width: 100%;
+    padding: 20px 15px;
+  }
+
+  .wwc_item-title {
+    text-align: center;
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Эдем || Цены
+    link(rel='stylesheet', type='text/css', href='//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css')
+    link(rel="stylesheet", href="assets/styles/app.min.css")
+  body
+    .wrapper
+      include ../includes/header.pug  
+      section.price
+        .price_wrap
+          h4.price_title Таблица цен
+          ul.price_list
+            li.price_list-item
+              .price_item-header
+                .price_header-decor
+                .price_header-title Только кремация
+                .price_header-price 7 450 грн
+              .price_item-content
+                ul.price_content-list
+                  li.price_content-list-item Услуги директора и персонала
+                  li.price_content-list-item Первоначальный перевод умершего
+                  li.price_content-list-item Служба бальзамирования
+                  li.price_content-list-item Одевание и косметика
+                  li.price_content-list-item Перевозка цветов
+              a(href="#").price_btn заказать
+            li.price_list-item
+              .price_item-header
+                .price_header-decor
+                .price_header-title Делюкс кремация
+                .price_header-price 10 568 грн
+              .price_item-content
+                ul.price_content-list
+                  li.price_content-list-item Услуги директора и персонала
+                  li.price_content-list-item Первоначальный перевод умершего
+                  li.price_content-list-item Служба бальзамирования
+                  li.price_content-list-item Одевание и косметика
+                  li.price_content-list-item Перевозка цветов
+              a(href="#").price_btn заказать
+            li.price_list-item
+              .price_item-header
+                .price_header-decor
+                .price_header-title Традиционные похороны
+                .price_header-price 5 550 грн
+              .price_item-content
+                ul.price_content-list
+                  li.price_content-list-item Услуги директора и персонала
+                  li.price_content-list-item Первоначальный перевод умершего
+                  li.price_content-list-item Служба бальзамирования
+                  li.price_content-list-item Одевание и косметика
+                  li.price_content-list-item Перевозка цветов
+              a(href="#").price_btn заказать
+      include ../includes/footer.pug   

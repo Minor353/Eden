@@ -1,0 +1,200 @@
+.form--main-ps {
+  margin-top: 60px;
+}
+
+.form--about-ps {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.form--services-ps {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.form {
+  padding: 0 15px;
+}
+
+.form_title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+.form_content {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.form_content-img {
+  margin-right: 60px;
+  margin-top: -122px;
+}
+
+.form_wrap {
+  width: 100%;
+}
+
+.form_area {
+  display: flex;
+  justify-content: space-between;
+
+  input {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: normal;
+    padding: 14px 20px;
+    color: #505269;
+    width: 270px;
+    max-height: 50px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    border: 1px solid #505269;
+    transition: 0.3s;
+  }
+
+  textarea {
+    width: 270px;
+    max-height: 50px;
+    resize: none;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: normal;
+    padding: 14px 20px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #505269;
+    transition: 0.3s;
+  }
+}
+
+
+
+.form_footer {
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: #000000;
+  }
+}
+
+.form_btn {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  text-transform: uppercase;
+  background-color: #EF4C23;
+  border: 2px solid transparent;
+  color: #FFFFFF;
+  padding: 12px 30px;
+  transition: 0.3s;
+  height: min-content;
+}
+
+
+.form_btn:hover {
+  background-color: #fff;
+  color: #EF4C23;
+  border: 2px solid #EF4C23;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .form_area-input input {
+    width: 300px;
+  }
+
+  .form_area-text textarea {
+    width: 300px;
+  }
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .form_area {
+    flex-direction: column;
+  }
+
+  .form_content {
+    justify-content: center;
+  }
+
+  .form_content-img {
+    margin-top: 0;
+    width: 33%;
+  }
+
+  .form_wrap {
+    width: 300px;
+  }
+
+  .form_footer {
+    flex-direction: column;
+  }
+
+  .form_footer p {
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .form_content {
+    position: relative;
+  }
+
+  .form_content-img {
+    width: auto;
+    position: absolute;
+  }
+
+  .form_wrap {
+    width: 100%;
+    position: relative;
+    z-index: 99;
+  }
+
+
+  .form_area-input input {
+    width: 100%;
+    background: #ffffff96;
+  }
+
+  .form_area-text textarea {
+    width: 100%;
+    background: #ffffff96;
+  }
+
+  .form_area-input {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .form--about-ps {
+    margin-top: 0px;
+  }
+
+  .form--main-ps {
+    margin-top: 0px;
+  }
+
+
+}
