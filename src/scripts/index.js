@@ -5,9 +5,6 @@ reviews();
 const productGallery = require('./component/product-gallery.js');
 productGallery();
 
-const productTabs = require('./component/product-tabs.js');
-productTabs();
-
 
 const answers = require('./component/answers.js');
 answers();

@@ -4,7 +4,7 @@ html(lang="ru")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    title Tehno-Dnepr || Контакты
+    title Эдем || Контакты
     link(rel="stylesheet", href="assets/styles/app.min.css")
   body
     .wrapper
@@ -15,31 +15,66 @@ html(lang="ru")
             h4.contact-main_content-title Наши контакты
             ul.contact-main_content-list
               li.contact-main_list-item
-                .contact-main_list-img
-                  img(src="assets/images/icons/treasure-map.svg", alt="icon")
-                .contact-main_list-data
-                  .contact-main_data-title Адрес
-                  .contact-main_data-text пр. Яворницкого, 111 г. Днепр
+                .contact-main_item-img
+                  img(src="assets/images/icons/treasure-map.svg", alt="contact")
+                .contact-main_item-content
+                  .contact-main_item-content-title Адрес
+                  .contact-main_content-text пр. Яворницкого, 111 г. Днепр
               li.contact-main_list-item
-                .contact-main_list-img
-                  img(src="assets/images/icons/clock.svg", alt="icon")
-                .contact-main_list-data
-                  .contact-main_data-title график работы
-                  .contact-main_data-text Вторник-воскресенье с 10:00 до 17:00
+                .contact-main_item-img
+                  img(src="assets/images/icons/clock.svg", alt="contact")
+                .contact-main_item-content
+                  .contact-main_item-content-title график работы
+                  .contact-main_content-text Вторник-воскресенье с 10:00 до 17:00
               li.contact-main_list-item
-                .contact-main_list-img
-                  img(src="assets/images/icons/smartphone.svg", alt="icon")
-                .contact-main_list-data
-                  .contact-main_data-title Телефон
-                  .contact-main_data-text +380960241602
+                .contact-main_item-img
+                  img(src="assets/images/icons/mobile.svg", alt="contact")
+                .contact-main_item-content
+                  .contact-main_item-content-title Телефон
+                  .contact-main_content-text +380960241602
               li.contact-main_list-item
-                .contact-main_list-img
-                  img(src="assets/images/icons/envelope.svg", alt="icon")
-                .contact-main_list-data
-                  .contact-main_data-title Email
-                  .contact-main_data-text example@mail.com
-          .contact-main_map
-            #map
-        section.instagram--contact-ps
-          include ../includes/_instagram.pug
+                .contact-main_item-img
+                  img(src="assets/images/icons/envelope.svg", alt="contact")
+                .contact-main_item-content
+                  .contact-main_item-content-title Email
+                  .contact-main_content-text example@mail.com
+        section.map
+          ul.map_list
+            li.map_list-item
+              .map_item-map
+                #map-canvas-left.map-canvas
+              .map_item-content.map_item-content--first
+                .map_content-title
+                  | Ритуальная служба «Эдем»
+                  br
+                  |  на Кирова
+                .map_content-contact.map_content-contact--first г. Днепр, пр. А. Поля, 131
+                .map_content-contact.map_content-contact--second +380 (50) 123 45 67
+                .map_content-contact.map_content-contact--third example@mail.com
+            li.map_list-item
+              .map_item-map
+                #map-canvas-center.map-canvas
+              .map_item-content.map_item-content--second
+                .map_content-title 
+                  | Ритуальная служба «Эдем» 
+                  br
+                  | на Калиновой
+                .map_content-contact.map_content-contact--first г. Днепр, ул. Калиновая, 72
+                .map_content-contact.map_content-contact--second +380 (50) 123 45 67
+                .map_content-contact.map_content-contact--third example@mail.com
+            li.map_list-item
+              .map_item-map
+                #map-canvas-right.map-canvas
+              .map_item-content.map_item-content--third
+                .map_content-title 
+                  | Ритуальная служба «Эдем»
+                  br
+                  | на Победе
+                .map_content-contact.map_content-contact--first г. Днепр, пр. Героев, 21а
+                .map_content-contact.map_content-contact--second +380 (50) 123 45 67
+                .map_content-contact.map_content-contact--third example@mail.com
+        section.form--about-ps
+          include ../includes/_form.pug
+      script(type='text/javascript', src='http://maps.google.com/maps/api/js?key=AIzaSyCo7hljuelb86soVC97y4atK-n_brWfc34&')
+      script(src="assets/scripts/contact-min.js")
       include ../includes/footer.pug  

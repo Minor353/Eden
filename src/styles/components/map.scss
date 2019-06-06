@@ -1,0 +1,90 @@
+.map_list {
+  max-width: 1170px;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.map_list-item {
+  list-style-type: none;
+  width: 370px;
+  border: 1px solid #161B1F;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 20px rgba(50, 50, 50, 0.15);
+}
+
+.map_item-map {
+  height: 235px;
+  background: grey;
+}
+
+.map_item-content {
+  padding: 60px 30px;
+  padding-bottom: 30px;
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: 10% 15%;
+}
+
+.map_item-content--first {
+  background-image: url('../images/icons/num-1.svg');
+}
+
+.map_item-content--second {
+  background-image: url('../images/icons/num-2.svg');
+}
+
+.map_item-content--third {
+  background-image: url('../images/icons/num-3.svg');
+}
+
+.map_content-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #161B1F;
+  margin-bottom: 15px;
+}
+
+.map_content-contact {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #161B1F;
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.map_content-contact::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.map_content-contact--first::after {
+  background-image: url('../images/icons/location-pin_color.svg');
+}
+
+.map_content-contact--second::after {
+  background-image: url('../images/icons/call_color.svg');
+}
+
+.map_content-contact--third::after {
+  background-image: url('../images/icons/message_color.svg');
+}
+
+.map-canvas {
+  height: 100%;
+}

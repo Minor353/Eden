@@ -90,64 +90,43 @@
 }
 
 .main-product_description-title {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'PT Serif Caption', serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 24px;
   line-height: normal;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
   color: #000000;
+}
+
+.main-product_description-subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 145%;
+  color: #000000;
+  margin-bottom: 60px;
 }
 
 .main-product_description-price {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'PT Serif Caption', serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 40px;
   line-height: normal;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   color: #000000;
 }
 
-.main-product_description-btn-wrap {
-  display: flex;
-  margin-bottom: 47px;
+.main-product_description-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+  color: #4F4F4F;
 }
 
-.main-product_order-btn {
-  text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: normal;
-  font-weight: bold;
-  text-transform: uppercase;
-  display: block;
-  width: min-content;
-  height: min-content;
-  background-color: #EF4C23;
-  padding: 12px 50px;
-  border: 2px solid transparent;
-  color: #FFFFFF;
-  margin-right: 30px;
-  transition: 0.3s;
-}
 
-.main-product_preorder-btn {
-  text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: normal;
-  text-transform: uppercase;
-  display: block;
-  width: max-content;
-  height: min-content;
-  background-color: #505269;
-  padding: 12px 50px;
-  border: 2px solid transparent;
-  color: #FFFFFF;
-  font-weight: bold;
-  transition: 0.3s;
-}
 
 .main-product_description-list {
   padding: 0;
@@ -269,18 +248,17 @@
 }
 
 .main-product_tabs-description {
-  padding: 40px;
+  padding: 40px 0;
   margin: 0;
-  border: 1px dashed #f2f2f2;
   background-color: #fff;
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-product_tabs-description-text {
   list-style-type: none;
-  display: none;
-}
-
-.main-product_tabs-description-text {
+  width: 48%;
+  margin: 0 5px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -288,6 +266,21 @@
 
   color: #000000;
 }
+
+.main-product_tabs-text-title {
+  font-family: 'PT Serif Caption', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.main-product_tabs-description-text:last-child {
+  width: 43%;
+}
+
 
 .main-product_tabs-text-wrap {
   display: flex;

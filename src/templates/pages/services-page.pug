@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Эдем || Похоронный агент
+    link(rel="stylesheet", href="assets/styles/app.min.css")
+  body
+    .wrapper
+      include ../includes/header.pug  
+      section.service-page
+        .service-page_wrap
+          .service-page_main
+            .service-page_item-img
+              img(src="assets/images/icons/information-symbol.svg", alt="services")
+            .service-page_item-content
+              .service-page_content-title Похоронный агент
+              .service-page_content-text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
+          ul.services-page_description
+            li.services-page_description-title Услуги похоронного агента:
+            li.services-page_description-item Приезд сотрудника в условленное время;
+            li.services-page_description-item Подбор места захоронения или кладбища;
+            li.services-page_description-item Выкопка ямы и закапывание гроба;
+            li.services-page_description-item Подготовка обряда отпевания;
+            li.services-page_description-item Доставка и приобретение вещей для усопшего;
+            li.services-page_description-item Подготовка ритуальной трапезы и помощь выбора блюд при составлении меню поминок;
+            li.services-page_description-item Помощь в организации или организация перевозки тела в морг и к месту захоронения;
+            li.services-page_description-item Заказ трапезного кафе в удобном районе города;
+            li.services-page_description-item Заказ услуги аренды автотранспорта для транспортировки людей на место захоронения и трапезный обед;
+            li.services-page_description-item Оформление медицинского свидетельства о смерти из больницы и морга;
+      .form.form--product
+          h4.form_title Оставьте заявку для заказа товара
+          .form_content
+            form(action="#", method="post").form_wrap
+              .form_area
+                  input(type="text" placeholder="Имя")
+                  input(type="text" placeholder="Телефон")
+                  textarea(name="#" placeholder="Комментарий")
+                  button(type="submit").form_btn Отправить   
+      include ../includes/footer.pug   

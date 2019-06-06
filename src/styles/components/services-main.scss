@@ -1,42 +1,112 @@
-.services-main_wrap {
-  max-width: 1170px;
+.services-main_title {
+  font-family: 'PT Serif Caption', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 53px;
+  text-align: center;
+  color: #000000;
+  margin: 60px 0;
+}
+
+.services-main_list {
+  padding: 0;
   margin: 0 auto;
-  padding: 0 15px;
+  max-width: 1170px;
+}
+
+.services-main_list-item {
+  list-style-type: none;
+  border: 1px solid #161B1F;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  transition: 0.3s;
+  padding: 30px;
+  padding-right: 60px;
+  box-sizing: border-box;
   display: flex;
+  align-items: center;
   position: relative;
-  min-height: 500px;
-  margin-bottom: 140px;
 }
 
-.services-main_content {
-  width: 570px;
-}
-
-.services-main_img {
+.services-main_list-item-decor {
   position: absolute;
-  top: -50px;
-  right: -380px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, #E6C292 0%, #FEF0CA 100%);
+  z-index: 1;
+  opacity: 0;
+  transition: 0.3s;
 }
 
-@media screen and (max-width: 1150px) {
-  .services-main_wrap {
-    flex-direction: column;
-    margin-bottom: 60px;
-  }
+.services-main_list-item:hover {
+  box-shadow: 0px 0px 15px rgba(22, 27, 31, 0.15);
+  border-color: transparent;
 
-  .services-main_content {
+  .services-main_list-item-decor {
+    opacity: 1;
+  }
+}
+
+.services-main_item-img {
+  width: 160px;
+  height: 160px;
+  margin-right: 30px;
+  position: relative;
+  z-index: 9;
+
+  img {
     width: 100%;
-
-    .services-main_content-title {
-      margin-top: 30px;
-    }
+    height: 100%;
+    object-fit: contain;
   }
+}
 
-  .services-main_img {
-    position: static;
+.services-main_item-content {
+  flex: 1;
+  position: relative;
+  z-index: 9;
+}
 
-    img {
-      width: 100%;
-    }
-  }
+.services-main_content-title {
+  font-family: 'PT Serif Caption', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  color: #161B1F;
+  margin-bottom: 20px;
+}
+
+.services-main_content-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+  color: #4F4F4F;
+  margin-bottom: 30px;
+}
+
+.services-main_content-btn {
+  text-decoration: none;
+  display: block;
+  background-color: #E6C292;
+  padding: 14px 34px;
+  width: min-content;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transition: 0.3s;
+}
+
+
+.services-main_content-btn:hover {
+  background-color: #35414B;
 }

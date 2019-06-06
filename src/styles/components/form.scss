@@ -12,6 +12,10 @@
   margin-bottom: 120px;
 }
 
+.form--product {
+  margin-bottom: 120px;
+}
+
 .form {
   padding: 0 15px;
 }
@@ -97,7 +101,7 @@
   font-size: 16px;
   line-height: normal;
   text-transform: uppercase;
-  background-color: #EF4C23;
+  background-color: #E6C292;
   border: 2px solid transparent;
   color: #FFFFFF;
   padding: 12px 30px;
@@ -108,8 +112,8 @@
 
 .form_btn:hover {
   background-color: #fff;
-  color: #EF4C23;
-  border: 2px solid #EF4C23;
+  color: #E6C292;
+  border: 2px solid #E6C292;
   transition: 0.3s;
   cursor: pointer;
 }
