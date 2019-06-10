@@ -105,3 +105,31 @@
 .adress_list-item--third::after {
   background-image: url('../images/icons/message.svg');
 }
+
+@media screen and (max-width: 768px) {
+  .adress_content {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .adress_list {
+    margin-bottom: 90px;
+  }
+
+  .adress_list:last-child {
+    margin-bottom: 0;
+  }
+
+  .adress_list-item {
+    text-align: center;
+  }
+
+  .adress_list-item::after {
+    left: 50px;
+  }
+
+  .adress_list::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

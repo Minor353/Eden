@@ -27,7 +27,7 @@
 
 .nav_item:hover {
   .nav_item-link {
-    color: #EF4C23;
+    color: #E6C292;
     transition: 0.3s;
   }
 
@@ -39,7 +39,7 @@
 .navBurger {
   display: none;
   cursor: pointer;
-  background: #111;
+  background: #E6C292;
   box-sizing: border-box;
   background-clip: content-box;
   width: 30px;
@@ -55,7 +55,7 @@
   &:after {
     content: "";
     position: absolute;
-    background: #111;
+    background: #E6C292;
     height: 2px;
     width: 100%;
     right: 0;
@@ -228,5 +228,6 @@
 
   .navBurger {
     display: block;
+    margin-left: 30%;
   }
 }

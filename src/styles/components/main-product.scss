@@ -342,7 +342,7 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .main-product_description {
     width: 100%;
     display: flex;
@@ -350,7 +350,23 @@
     align-items: center;
   }
 
+  .main-product_tabs-description {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .main-product_tabs-description-text {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .main-product_tabs-description-text:last-child {
+    width: 100%;
+  }
+
+  .main-product_tabs-text-title {
+    text-align: center;
+  }
 }
 
 

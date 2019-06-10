@@ -145,8 +145,17 @@
     width: 33%;
   }
 
+  .form_area input {
+    width: 100%;
+  }
+
+  .form_area textarea {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
   .form_wrap {
-    width: 300px;
+    width: 50%;
   }
 
   .form_footer {

@@ -39,7 +39,7 @@
 
 .header_contact:hover {
   .header_contact-link {
-    color: #EF4C23;
+    color: #E6C292;
     transition: 0.3s;
   }
 
@@ -53,6 +53,32 @@
 
   .header_contact {
     margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+
+}
+
+@media screen and (max-width: 769px) {
+  .header_contact {
+    flex: 1;
+  }
+
+  .header_contact-img {
+    opacity: 0;
+  }
+
+  .header_contact:hover {
+    .header_contact-link {
+      color: #E6C292;
+      transition: 0.3s;
+    }
+
+    .header_contact-img {
+      opacity: 0;
+    }
   }
 }
 
