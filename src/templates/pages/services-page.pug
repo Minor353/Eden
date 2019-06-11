@@ -9,6 +9,14 @@ html(lang="ru")
   body
     .wrapper
       include ../includes/header.pug  
+      .breadcrumbs
+          ul.breadcrumbs_list
+            li.breadcrumbs_list-item
+              a(href="index.html").breadcrumbs_item-link Главная
+            li.breadcrumbs_list-item
+              a(href="services.html").breadcrumbs_item-link Услуги
+            li.breadcrumbs_list-item
+              .breadcrumbs_item-text Похоронный агент
       section.service-page
         .service-page_wrap
           .service-page_main

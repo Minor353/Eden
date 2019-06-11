@@ -10,6 +10,12 @@ html(lang="ru")
   body
     .wrapper
       include ../includes/header.pug  
+      .breadcrumbs
+          ul.breadcrumbs_list
+            li.breadcrumbs_list-item
+              a(href="index.html").breadcrumbs_item-link Главная
+            li.breadcrumbs_list-item
+              .breadcrumbs_item-text Товары
       section.product-category_catalog-list-ps
         h4.product-category_title Категории товаров
         include ../includes/_product-categories.pug  

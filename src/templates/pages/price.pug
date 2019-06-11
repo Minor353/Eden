@@ -11,6 +11,12 @@ html(lang="ru")
     .wrapper
       include ../includes/header.pug  
       section.price
+        .breadcrumbs
+          ul.breadcrumbs_list
+            li.breadcrumbs_list-item
+              a(href="index.html").breadcrumbs_item-link Главная
+            li.breadcrumbs_list-item
+              .breadcrumbs_item-text Цены
         .price_wrap
           h4.price_title Таблица цен
           ul.price_list

@@ -10,6 +10,14 @@ html(lang="ru")
     .wrapper
       include ../includes/header.pug  
       main.main
+        .breadcrumbs
+          ul.breadcrumbs_list
+            li.breadcrumbs_list-item
+              a(href="index.html").breadcrumbs_item-link Главная
+            li.breadcrumbs_list-item
+              a(href="catalog-lisr.html").breadcrumbs_item-link Товары
+            li.breadcrumbs_list-item
+              .breadcrumbs_item-text Гробы
         section.last-product--catalog-ps
           include ../includes/_last-product.pug  
         section.catalog

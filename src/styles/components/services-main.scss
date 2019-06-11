@@ -1,3 +1,7 @@
+.services-main {
+  padding: 0 15px;
+}
+
 .services-main_title {
   font-family: 'PT Serif Caption', serif;
   font-style: normal;
@@ -109,4 +113,21 @@
 
 .services-main_content-btn:hover {
   background-color: #35414B;
+}
+
+@media screen and (max-width: 550px) {
+  .services-main_list-item {
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .services-main_item-img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .services-main_content-btn {
+    margin: 0 auto;
+  }
 }

@@ -49,6 +49,16 @@
   .main-btn {
     display: none;
   }
+
+  .last-product::after {
+    bottom: -30px;
+    right: 30px;
+  }
+
+  .last-product::before {
+    bottom: -40px;
+    right: 30px
+  }
 }
 
 .last-product_title {

@@ -7,6 +7,10 @@
   justify-content: space-around;
 }
 
+.map {
+  padding: 0 15px;
+}
+
 .map_list-item {
   list-style-type: none;
   width: 370px;
@@ -88,4 +92,11 @@
 
 .map-canvas {
   height: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .map_list-item {
+    width: 100%;
+  }
 }
