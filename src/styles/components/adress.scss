@@ -133,3 +133,10 @@
     transform: translateX(-50%);
   }
 }
+
+@media screen and (max-width: 540px) {
+  .adress_list-title {
+    text-align: center;
+    font-size: 15px;
+  }
+}

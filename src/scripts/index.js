@@ -17,3 +17,9 @@ navMobile();
 
 const productForm = require('./component/product-form.js');
 productForm();
+
+const seoText = require('./component/seoText.js');
+seoText();
+
+const formPopup = require('./component/formPopup.js');
+formPopup();

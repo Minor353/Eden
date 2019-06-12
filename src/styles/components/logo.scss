@@ -8,3 +8,10 @@
     object-fit: cover;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .logo {
+    width: 60px;
+    height: 45px;
+  }
+}

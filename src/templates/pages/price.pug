@@ -10,6 +10,22 @@ html(lang="ru")
   body
     .wrapper
       include ../includes/header.pug  
+      .form-popup_wrap
+        .form-popup
+          .form-popup_cross
+          .form-popup_title Оставьте заявку для заказа
+          .form-popup_form
+            form(action="#", method="post")
+              label
+                input(type="text" placeholder="Имя").form-popup_input
+                div Как к Вам можно обращаться
+              label
+                input(type="text" placeholder="Телефон").form-popup_input
+                div Мы свяжеся с Вами в самое ближайшее время
+              label
+                textarea(name="" placeholder="Комментарий").form-popup_input
+                div Опишите, что Вас интересует
+              button(type="submit").form-popup_btn отправить
       section.price
         .breadcrumbs
           ul.breadcrumbs_list

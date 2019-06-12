@@ -27,9 +27,14 @@
   font-size: 14px;
   line-height: 19px;
   color: #000000;
+  max-height: 5000px;
+  transition: 0.3s;
+}
+
+.seo-text_content--close {
+  max-height: 19px;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  transition: 0.3s;
 }
 
 .seo-text_btn {
@@ -41,10 +46,21 @@
   position: absolute;
   right: -21px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%) rotate(0deg);
   background-image: url('../images/icons/cross.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 50%;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.seo-text_btn--active {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+@media screen and (max-width: 650px) {
+  .seo-text_wrap {
+    padding-right: 20px;
+  }
 }

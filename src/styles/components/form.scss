@@ -83,17 +83,13 @@
 
 
 .form_footer {
-  display: flex;
-  justify-content: space-between;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
 
-  p {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 18px;
-
-    color: #000000;
-  }
 }
 
 .form_btn {

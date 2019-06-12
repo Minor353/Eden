@@ -1,8 +1,4 @@
 .catalog {
-  margin-top: 120px;
-}
-
-.catalog {
   .last-product_item-img {
     max-width: 190px;
     max-height: 160px;
@@ -23,8 +19,7 @@
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
-  padding-top: 60px;
-  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
   display: flex;
 }
 
@@ -63,6 +58,27 @@
   color: #000000;
   border-bottom: 1px solid #FEF0CA;
   transition: 0.3s;
+  position: relative;
+}
+
+.catalog_categories-link::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+  right: 31px;
+  width: 15px;
+  height: 15px;
+  border-bottom: 2px solid #E6C292;
+  border-right: 2px solid #E6C292;
+  transition: 0.3s;
+}
+
+.catalog_categories-link--active::after {
+  border-right: none;
+  width: 20px;
+  right: 30px;
+  transform: translateY(-50%) rotate(0deg);
 }
 
 .catalog_categories-btn {
@@ -70,8 +86,21 @@
 }
 
 .catalog_categories-link:hover {
-  color: #EF4C23;
+  color: #E6C292;
   transition: 0.3s;
+
+}
+
+.catalog_categories-link:hover::after {
+  right: 25px;
+}
+
+.catalog_categories-link--active:hover {
+  color: #000000;
+}
+
+.catalog_categories-link--active:hover::after {
+  right: 30px;
 }
 
 .catalog_list-wrap {
@@ -126,7 +155,8 @@
 }
 
 .catalog_categories-link--active {
-  color: #EF4C23;
+  font-weight: bold;
+  color: #000000;
 }
 
 
@@ -157,13 +187,11 @@
 
   .catalog_categories {
     background-color: #fff;
-    padding: 5px;
     position: fixed;
     top: 90px;
     left: -290px;
     z-index: 99;
     box-shadow: 0px 5px 20px rgba(50, 50, 50, 0.15);
-    height: 80%;
     width: 280px;
     margin-right: 0;
     overflow-y: scroll;
@@ -193,22 +221,10 @@
   }
 
   .catalog_categories-btn--active {
-    left: 290px;
+    left: 280px;
     transition: 0.3s;
     opacity: 0.6;
   }
 
-  .catalog_categories-item:last-child {
-    margin-bottom: 20px;
-  }
 
-  .catalog_categories-item:nth-child(2) {
-    margin-bottom: 20px;
-
-
-    .catalog_categories-item-title {
-      border-bottom: 1px solid #d6d6d6;
-      padding: 10px 0;
-    }
-  }
 }

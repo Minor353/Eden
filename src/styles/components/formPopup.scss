@@ -1,0 +1,138 @@
+.form-popup_wrap {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #0000004d;
+  z-index: 9999;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.form-popup {
+  margin: auto;
+  background-color: #FFFFFF;
+  border: 1px solid #161B1F;
+  max-width: 500px;
+  padding: 30px 70px;
+  box-sizing: border-box;
+  position: relative;
+  opacity: 0;
+  transition: 0.3s;
+
+  label {
+
+
+    div {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 19px;
+      color: #828282;
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.form-popup_wrap--active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.3s;
+
+  .form-popup {
+    opacity: 1;
+    transition: 0.5s;
+  }
+}
+
+.form-popup_cross {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-popup_cross:hover {
+  transform: scale(1.1);
+}
+
+.form-popup_cross::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 20px;
+  border-bottom: 2px solid #161B1F;
+  transform: rotate(45deg);
+}
+
+.form-popup_cross::before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 20px;
+  border-bottom: 2px solid #161B1F;
+  transform: rotate(-45deg);
+}
+
+.form-popup_title {
+  font-family: 'PT Serif Caption', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.form-popup_input {
+  background: #FFFFFF;
+  border: 1px solid #161B1F;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  max-height: 50px;
+  line-height: 19px;
+  color: #4F4F4F;
+  padding: 13px 20px;
+  resize: none;
+  width: 100%;
+}
+
+.form-popup_btn {
+  width: 100%;
+  background-color: #E6C292;
+  border: 1px solid transparent;
+  padding: 14px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-popup_btn:hover {
+  background-color: #FEF0CA;
+  color: #161B1F;
+}
+
+
+@media screen and (max-width: 540px) {
+  .form-popup {
+
+    padding: 30px 20px
+  }
+}
