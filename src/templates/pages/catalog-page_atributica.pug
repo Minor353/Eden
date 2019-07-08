@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Eden || Атрибутика
+    link(rel="stylesheet", href="assets/styles/app.min.css")
+  body
+    .wrapper
+      include ../includes/header.pug  
+      .breadcrumbs
+          ul.breadcrumbs_list
+            li.breadcrumbs_list-item
+              a(href="index.html").breadcrumbs_item-link Главная
+            li.breadcrumbs_list-item
+              a(href="index.html").breadcrumbs_item-link Товары
+            li.breadcrumbs_list-item
+              .breadcrumbs_item-text Атрибутика
+      section.catalog-page
+        .catalog-page_wrap
+          .catalog-page_main
+            .catalog-page_main-content
+              .catalog-page_content-title Ритуальная атрибутика
+              .catalog-page_text 
+                p.catalog-page_text Организация и проведение похорон нуждаются в использовании специальной ритуальной атрибутики, которая в той или иной мере помогает проводить похоронный процесс, и чётко соответствует канонам, установленным вероисповеданием усопшего. На сегодняшний день ритуальная служба «ЭДЕМ» предоставляет возможность купить ритуальную атрибутику в Киеве на самых приемлемых условиях с доставкой на дом или на место проведения панихиды.
+                p.catalog-page_text Отсутствие какой-либо важной детали или небольшого погребального элемента может расстроить родных и близких: ведь похороны их родного и любимого человека должны пройти по давно отработанному и правильному сценарию. Именно поэтому этот важный момент контролируют либо сами родственники, либо ритуальный агент нашего похоронного бюро.
+                p.catalog-page_text Наша компания предоставляет вам возможность приобрести все необходимые ритуальные товары такие как кресты, гробы... и выбор атрибуты, не выходя из дома. И для этого достаточно позвонить нашим специалистам и предоставить информацию о том, в чём вы нуждаетесь.
+              ul.catalog-page_content-list
+                li.catalog-page_title Атрибутика с доставкой
+                li.catalog-page_list-item Крестики.
+                li.catalog-page_list-item Свечки.
+                li.catalog-page_list-item Вышитые платки.
+                li.catalog-page_list-item Полотенца.
+                li.catalog-page_list-item Погребальные наборы и др...
+            .catalog-page_main-img
+              img(src="assets/images/content/catalog-atribut.png", alt="catalog")
+          .catalog-page_text Безусловно, при выборе атрибутики для похорон близкого человека хочется покупать всё самое качественное и лучшее, однако есть множество нюансов, которые могут повлиять на выбор, и именно о них вы сможете поговорить с нашими агентами. Мы поможем определиться и заказать всё необходимое.
+          .catalof-page_text
+            .catalof-page_text-title.catalog-page_title Ритуальная атрибутика для ВИП похорон
+            p.catalog-page_text Атрибутика на VIP похоронах отличается не только ценами, но и качеством исполнения, материалом, из которого она изготовлена, а также длительной гарантией на изделие. На страницах нашего сайта вы можете найти полный перечень ритуальных атрибутов, их фото, стоимость и особенности приобретения. Мы готовы доставить выбранную продукцию в любой уголок города, пригорода и всей Украины.
+      .form.form--product
+          h4.form_title Оставьте заявку для заказа товара
+          .form_content
+            form(action="#", method="post").form_wrap
+              .form_area
+                  input(type="text" placeholder="Имя")
+                  input(type="text" placeholder="Телефон")
+                  textarea(name="#" placeholder="Комментарий")
+                  button(type="submit").form_btn Отправить   
+          p.form_footer Оставьте свои данные и мы свяжемся с вами в ближайшее время.  
+      include ../includes/footer.pug  

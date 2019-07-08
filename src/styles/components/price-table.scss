@@ -1,0 +1,50 @@
+.price-table {
+  margin: 100px 0;
+}
+
+.price-table_wrap {
+  max-width: 1200px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 20px rgba(50, 50, 50, 0.15);
+  padding: 30px 60px;
+}
+
+.price-table_title {
+  font-family: 'PT Serif Caption', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  color: #161B1F;
+  margin-bottom: 20px;
+}
+
+.price-table_list {
+  padding: 0;
+  margin: 0;
+}
+
+.price-table_list-item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  list-style-type: none;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+
+.price-table_list-item:last-child {
+  margin-bottom: 0;
+}
+
+.price-table_decor {
+  border-bottom: 1px solid #E6C292;
+  flex: 1;
+  margin: 0 15px;
+}

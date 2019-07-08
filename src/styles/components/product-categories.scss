@@ -12,6 +12,7 @@
   padding: 40px 0;
   background-color: #fff;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .product-category_title {
@@ -61,18 +62,19 @@
 
 .product-categories_item {
   list-style-type: none;
-  min-width: 270px;
+  min-width: 350px;
   padding: 30px 70px;
   box-sizing: border-box;
   box-shadow: 0px 5px 20px rgba(50, 50, 50, 0.15);
   position: relative;
+  margin: 10px;
 }
 
 .product-categories_item-decor {
   position: absolute;
   z-index: 1;
   top: 34%;
-  left: 49%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 30px;
   height: 30px;
@@ -105,6 +107,7 @@
     position: relative;
     z-index: 99;
     margin-bottom: 30px;
+    object-fit: contain;
   }
 
 }

@@ -1,0 +1,141 @@
+.catalog-page_wrap {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 60px auto;
+}
+
+.catalog-page_main {
+  display: flex;
+
+  @include tablet() {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.catalog-page_main-img {
+  width: 470px;
+
+  img {
+    width: 100%;
+    max-height: 610px;
+    object-fit: contain;
+
+    @include mobile() {
+      max-width: 70%;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}
+
+.catalog-page_main-content {
+  flex: 1;
+  margin-right: 30px;
+}
+
+.catalog-page_content-title {
+  font-family: 'PT Serif Caption', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 53px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.catalog-page_text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.catalog-page_content-list {
+  padding: 0;
+  margin: 40px 0;
+
+  li {
+    list-style-type: none;
+  }
+}
+
+.catalog-page_title {
+  font-family: 'PT Serif Caption', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  color: #161B1F;
+  margin-bottom: 20px;
+}
+
+.catalog-page_list-item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  margin-top: 20px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.catalog-page_list-item::after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  background-image: url(../images/icons/check.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.catalog-page_advantages-list {
+  padding: 30px 60px;
+  background: #FFFFFF;
+  margin-bottom: 40px;
+  box-shadow: 0px 5px 20px rgba(50, 50, 50, 0.15);
+
+  li {
+    list-style-type: none;
+  }
+}
+
+.catalog-page_advantages-item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #000000;
+  padding-left: 30px;
+  position: relative;
+  margin-top: 20px;
+
+  span {
+    font-weight: bold;
+  }
+}
+
+.catalog-page_advantages-item::after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  background-image: url(../images/icons/check.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.catalog-page_link {
+  color: #161B1F;
+}

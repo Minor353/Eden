@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Eden || Памятник 
+    link(rel="stylesheet", href="assets/styles/app.min.css")
+  body
+    .wrapper
+      include ../includes/header.pug  
+      .breadcrumbs
+          ul.breadcrumbs_list
+            li.breadcrumbs_list-item
+              a(href="index.html").breadcrumbs_item-link Главная
+            li.breadcrumbs_list-item
+              a(href="index.html").breadcrumbs_item-link Товары
+            li.breadcrumbs_list-item
+              .breadcrumbs_item-text Памятники
+      section.catalog-page
+        .catalog-page_wrap
+          .catalog-page_main
+            .catalog-page_main-content
+              .catalog-page_content-title Памятники и надгробия
+              .catalog-page_text Увековечить память усопшего человека на его могиле можно различными способами и разными ритуальными атрибутами. Однако чаще всего для этих целей принято использовать памятники или надгробия, которые не только играют роль информационного полотна, сообщающего о том, кто покоится в этой могиле, но и несут в себе эстетическую составляющую оформления могилы, а также наглядно демонстрируют фото усопшего.
+              p.catalog-page_text Наше бюро «ЭДЕМ» предлагает памятники для установки на могиле различных типов, видов и размеров из натурального или искусственного материала по самым низким ценам в городе. Мы предлагаем стандартные и эксклюзивные памятники от самых простых до целых могильных композиций из мрамора, гранита и даже бронзы.
+              p.catalog-page_text Только ответственный подход к изготовлению памятников и их последующая профессиональная установка позволяют выбранной у нас продукции служить долго, без проблем и появления дефектов.
+            .catalog-page_main-img
+              img(src="assets/images/content/catalog-atribut.png", alt="catalog")
+          .catalof-page_text
+            .catalof-page_text-title.catalog-page_title Ассортимент памятников из гранита
+            p.catalog-page_text В нашем бюро в широком ассортименте имеются гробы, венки, ритуальные атрибуты, одежда для покойников, ритуальная атрибутика...
+            p.catalog-page_text Ассортимент надгробных памятников у нас разнообразен: вы можете купить памятник для установки на кладбище стандартного образца и формата, а можете заказать изготовление индивидуального памятника по вашим эскизам или рисункам. Также вы можете получить полноценную консультацию от наших специалистов по качеству предлагаемой нами продукции, её сроку службы и другим интересующим вопросам.
+            p.catalog-page_text Вся предлагаемая продукция характеризуется высоким качеством исполнения, отличными эксплуатационными характеристиками и низкими ценами. При желании клиента на памятник может быть нанесён цветной рисунок, фотография или любая другая информация. Также мы предоставляем гарантии на проведённую нашими специалистами работу – монтаж памятника, статуи, скульптуры или других ритуальных атрибутов на могиле.
+      .form.form--product
+          h4.form_title Оставьте заявку для заказа товара
+          .form_content
+            form(action="#", method="post").form_wrap
+              .form_area
+                  input(type="text" placeholder="Имя")
+                  input(type="text" placeholder="Телефон")
+                  textarea(name="#" placeholder="Комментарий")
+                  button(type="submit").form_btn Отправить   
+          p.form_footer Оставьте свои данные и мы свяжемся с вами в ближайшее время.  
+      include ../includes/footer.pug   

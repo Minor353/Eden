@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Eden || Гробы
+    link(rel="stylesheet", href="assets/styles/app.min.css")
+  body
+    .wrapper
+      include ../includes/header.pug  
+      .breadcrumbs
+          ul.breadcrumbs_list
+            li.breadcrumbs_list-item
+              a(href="index.html").breadcrumbs_item-link Главная
+            li.breadcrumbs_list-item
+              a(href="index.html").breadcrumbs_item-link Товары
+            li.breadcrumbs_list-item
+              .breadcrumbs_item-text Гробы
+      section.catalog-page
+        .catalog-page_wrap
+          .catalog-page_main
+            .catalog-page_main-content
+              .catalog-page_content-title Гробы с доставкой
+              .catalog-page_text Мы предлагаем широкий ассортимент гробов для различных финансовых возможностей: от самых простых и бюджетных, оббитых тканью и до элитных образцов из благородных пород дерева. Мы также можем изготовить гроб по индивидуальному заказу. 
+                |
+                br
+                | Все гробы изготовлены из качественного материала. Если у Вас возникнут вопросы, то позвоните нашим консультантам, и они помогут решить Вашу проблему.
+              ul.catalog-page_content-list
+                li.catalog-page_title Почему лучше купить гроб в нашей компании?
+                li.catalog-page_list-item Гробы изготовлены из прочного, надёжного и качественного материала;
+                li.catalog-page_list-item Мы удовлетворяем любые желания наших клиентов;
+                li.catalog-page_list-item Низкая стоимость гробов;
+                li.catalog-page_list-item Можете заказать гроб в любое время;
+                li.catalog-page_list-item Большой выбор гробов;
+                li.catalog-page_list-item Мы постоянно пополняем ассортимент товара новинками;
+                li.catalog-page_list-item Вы можете заказать или купить гробы не выходя из дома;
+                li.catalog-page_list-item Индивидуальный подход к каждому покупателю.
+            .catalog-page_main-img
+              img(src="assets/images/content/catalog-grob.png", alt="catalog")
+          .catalof-page_text
+            .catalof-page_text-title.catalog-page_title Как правильно выбрать гроб?
+            p.catalog-page_text Выбору гроба необходимо уделить особое внимание, так как в момент похоронной церемонии Вы будете стоять у гроба возле усопшего, провожая его в последний путь. Выбирая гроб, уделяйте внимание материалу, из которого он изготавливается, внешний вид и элементы декора. Стоимость гроба будет зависеть от его вида, размера, типа фурнитуры и аксессуаров.
+          ul.catalog-page_advantages-list
+            li.catalog-page_advantages-title.catalog-page_title В нашей компании Вы можете приобрести:
+            li.catalog-page_advantages-item 
+              span Деревянные гробы,
+              | которые снаружи обиваются тканью. Каркас гроба в основном изготавливается из хвойных пород древесины. Поверх каркаса набивается ткань, которую Вы выбираете сами: атласную, шёлковую, хлопчатобумажную или бархатную. Данный вид гроба является идеальным решением, когда Вы ограничены в деньгах. Несмотря на низкую стоимость, они имеют первоклассные характеристики;
+            li.catalog-page_advantages-item 
+              span Лакированные гробы
+              | изготавливаются из ценных пород дерева: вишня, сосна, бук, дуб. Они могут украшаться оригинальной фурнитурой или орнаментом. В нашем каталоге Вы найдёте матовые и глянцевые гробы, как светлые, так и тёмные. В наше время они пользуются популярностью;
+            li.catalog-page_advantages-item 
+              span Детские гробы.
+              | При заказе гроба необходимо знать рост и вес ребёнка. Многие родители в гроб хотят положить любимую игрушку ребёнка и другие личные вещи, поэтому этот факт должен тоже учитываться при заказе детского гроба. Популярностью пользуются лакированные детские гробы, которые обиты атласом. Детский гроб мы можем украсить искусственными или живыми цветочными композициями.
+          p.catalog-page_title У нас также имеются в ассортименте 
+            a(href="#").catalog-page_link ритуальные венки
+            |  для любых похорон.
+      .form.form--product
+          h4.form_title Оставьте заявку для заказа товара
+          .form_content
+            form(action="#", method="post").form_wrap
+              .form_area
+                  input(type="text" placeholder="Имя")
+                  input(type="text" placeholder="Телефон")
+                  textarea(name="#" placeholder="Комментарий")
+                  button(type="submit").form_btn Отправить   
+          p.form_footer Оставьте свои данные и мы свяжемся с вами в ближайшее время.  
+      include ../includes/footer.pug   

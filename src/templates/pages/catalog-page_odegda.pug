@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Eden || Одежда
+    link(rel="stylesheet", href="assets/styles/app.min.css")
+  body
+    .wrapper
+      include ../includes/header.pug  
+      .breadcrumbs
+          ul.breadcrumbs_list
+            li.breadcrumbs_list-item
+              a(href="index.html").breadcrumbs_item-link Главная
+            li.breadcrumbs_list-item
+              a(href="index.html").breadcrumbs_item-link Товары
+            li.breadcrumbs_list-item
+              .breadcrumbs_item-text Одежда
+      section.catalog-page
+        .catalog-page_wrap
+          .catalog-page_main
+            .catalog-page_main-content
+              .catalog-page_content-title Одежда для умерших
+              .catalog-page_text Ритуальная служба «ЭДЕМ» предлагает широкий ассортимент одежды для умерших для любого возраста, размеров и особенностей строения тела. В некоторых случаях заказчики предоставляют нам возможность самостоятельно выбирать одежду для покойного, особенно это касается тех случаев, когда наше ритуальное бюро занимается организацией и проведением всего похоронного процесса. Ритуальная одежда должна быть не вызывающей, стильной и соответствовать возрасту усопшего. У нас в наличии есть одежда для покойных разного телосложения, пола, возраста и стиля. В комплексе предоставляемых услуг мы на месте – в морге определяем, какая именно одежда подойдёт усопшему, согласуем с его близкими или родными и доставляем гроб с ним уже одетым и готовым к погребению.
+            .catalog-page_main-img
+              img(src="assets/images/content/catalog-odegda.png", alt="catalog")
+          .catalof-page_text
+            .catalof-page_text-title.catalog-page_title Одежда для умершего с доставкой
+            p.catalog-page_text Также вы можете заказать доставку одежды для покойного по предварительному звонку, уточнив все необходимые параметры и требования к ней – размер, цвет, длину и фасон платья, брюк или юбки и необходимость в дополнительных аксессуарах.
+      .form.form--product
+          h4.form_title Оставьте заявку для заказа товара
+          .form_content
+            form(action="#", method="post").form_wrap
+              .form_area
+                  input(type="text" placeholder="Имя")
+                  input(type="text" placeholder="Телефон")
+                  textarea(name="#" placeholder="Комментарий")
+                  button(type="submit").form_btn Отправить   
+          p.form_footer Оставьте свои данные и мы свяжемся с вами в ближайшее время.  
+      include ../includes/footer.pug   

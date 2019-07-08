@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Eden || Венки
+    link(rel="stylesheet", href="assets/styles/app.min.css")
+  body
+    .wrapper
+      include ../includes/header.pug  
+      .breadcrumbs
+          ul.breadcrumbs_list
+            li.breadcrumbs_list-item
+              a(href="index.html").breadcrumbs_item-link Главная
+            li.breadcrumbs_list-item
+              a(href="index.html").breadcrumbs_item-link Товары
+            li.breadcrumbs_list-item
+              .breadcrumbs_item-text Венки
+      section.catalog-page
+        .catalog-page_wrap
+          .catalog-page_main
+            .catalog-page_main-content
+              .catalog-page_content-title Ритуальные венки с доставкой
+              .catalog-page_text Ритуальные венки на похоронах выражают почтение памяти усопшего. Возложение венков и цветов на похоронах - древняя традиция, более древняя, чем христианство. Люди издавна считали, что укладывание венков на могилу, поможет облегчить тяжесть потери близким людям умершего.
+              .catalof-page_text
+                .catalof-page_text-title.catalog-page_title Почтение памяти усопшего
+                p.catalog-page_text Как почтить память ушедшего из жизни родственника, друга, близного человека? Как выразить свое горе и траур, которые овладели вами даже при одной мысли, что человека нет уже в живых? Для прощания с усопшим на похоронах, вам нужно прийти и положить букет цветов или принести корзину с цветами, или ритуальный венок. Они могут быть изготовлены, как из живых, так и из искусственных цветов, которые были одни из любимых цветов покойного или те, которые нравятся его родным. Во время окончания оформления композиций венки украсят похоронными лентами, на которых пишут прощальные слова от коллег и близких.
+            .catalog-page_main-img
+              img(src="assets/images/content/catalog-venok.png", alt="catalog")
+          .catalof-page_text
+            .catalof-page_text-title.catalog-page_title Заказ траурного венка
+            p.catalog-page_text Для тех людей, которые хотят купить ритуальный венок, хороший вариант приобрести его в магазине ритуальной атрибутики  бюро «ЭДЕМ». Здесь вы можете заказать траурные венки с доставкой.
+          ul.catalog-page_content-list
+            li.catalog-page_title Наше бюро предлагает вам:
+            li.catalog-page_list-item Букеты живых цветов, которые выглядят роскошно.
+            li.catalog-page_list-item Подушечки, изготовленные из цветов.
+            li.catalog-page_list-item Корзины с цветами.
+          ul.catalog-page_advantages-list
+            li.catalog-page_advantages-title.catalog-page_title Мы предоставим:
+            li.catalog-page_advantages-item Ритуальные венки сделанные из живых цветов, искусственных цветов, которые оформлены лентами и подписями по вашему желанию.
+            li.catalog-page_advantages-item Мы создадим ритуальные венки по созданному эскизу.
+            li.catalog-page_advantages-item Поможем выбрать венок под ваш определенный случай.
+            li.catalog-page_advantages-item Цветы, которые мы используем во время изготовления ритуальных венков всегда свежие и долго не вянут.
+          .catalof-page_text
+            .catalof-page_text-title.catalog-page_title Как купить венки с доставкой
+            p.catalog-page_text Мы предлагаем доставку и оформление всех видов композиций по городу и области. Наше бюро понимает, на сколько тяжкая минута утраты близкого человека и мы предельно быстро решим проблему, связанную с цветами на похоронах.
+            p.catalog-page_text Для того, чтобы заказать ритуальные венки , вам потребуется позвонить нашим специалистам и обсудить с ними все интересующие вас вопросы, в связи с тем, что наши венки имеют разнообразные формы. Консультант нашего бюро окажет вам помощь в консультационной поддержке касаясь того какой венок вам выбрать, по мимо этого подберет для вас цветовую гаму и ритуальную ленту.
+            p.catalog-page_text Помимо ритуальных венков у нас можно купить разнообразные ритуальные атрибуты, которые понадобятся во время проведения похорон. По вашему желанию вы можете заказать в нашем бюро «ЭДЕМ» ритуального агента, при этом вы получите полный комплекс услуг и внимательный подход. Наше бюро поможет вам и сократит сроки оформления и доставки. Нам хочется хотя бы немного облегчить вашу утрату, взяв половину хлопот на себя. Обращайтесь к нам за помощью, и наш ритуальный агент сделает все быстро, качественно и надежно.
+      .form.form--product
+          h4.form_title Оставьте заявку для заказа товара
+          .form_content
+            form(action="#", method="post").form_wrap
+              .form_area
+                  input(type="text" placeholder="Имя")
+                  input(type="text" placeholder="Телефон")
+                  textarea(name="#" placeholder="Комментарий")
+                  button(type="submit").form_btn Отправить   
+          p.form_footer Оставьте свои данные и мы свяжемся с вами в ближайшее время.  
+      include ../includes/footer.pug   

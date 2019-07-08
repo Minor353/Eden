@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Eden || Кресты
+    link(rel="stylesheet", href="assets/styles/app.min.css")
+  body
+    .wrapper
+      include ../includes/header.pug  
+      .breadcrumbs
+          ul.breadcrumbs_list
+            li.breadcrumbs_list-item
+              a(href="index.html").breadcrumbs_item-link Главная
+            li.breadcrumbs_list-item
+              a(href="index.html").breadcrumbs_item-link Товары
+            li.breadcrumbs_list-item
+              .breadcrumbs_item-text Кресты
+      section.catalog-page
+        .catalog-page_wrap
+          .catalog-page_main
+            .catalog-page_main-content
+              .catalog-page_content-title Ритуальные кресты от 220 грн
+              .catalog-page_text Могила каждого православного человека должна быть оформлена в соответствии с традициями и обычаями православной веры и личными пожеланиями его близких людей. Однако, следует помнить о том, что одним из неотъемлемых атрибутов оформления любой могилы является ритуальный крест. И именно кресту уделяется внимание при выборе элементов оформления для свежей могилы, так как он должен быть установлен на могиле сразу же после погребения усопшего. На сегодняшний день принято устанавливать не только деревянные кресты: наши заказчики заказывают и устанавливают кресты из мрамора, из декоративного бетона, из гранита и, конечно же, из дерева.
+              .catalof-page_text
+                .catalof-page_text-title.catalog-page_title Внешний вид ритуального креста
+                p.catalog-page_text Ритуальные кресты могут быть совсем простенькими или, наоборот, возвышаться на могиле, являя всему миру распятого Иисуса. Безусловно, выбор дизайна креста, как и материала, ложится на плечи родных и близких усопшего. Но в том случае, если вы совершенно не знаете, каким должен быть этот атрибут, что он должен собой представлять и на какие моменты обращать внимание, наши специалисты предоставят вам полноценную консультационную поддержку и помогут определиться с выбором.
+            .catalog-page_main-img
+              img(src="assets/images/content/catalog-atribut.png", alt="catalog")
+          .catalof-page_text
+            p.catalog-page_text В чём особенность современных предложений? На сегодняшний день широкий ассортимент ритуальных атрибутов позволяет каждому желающему купить ритуальный крест  на своё усмотрение в соответствии со своими финансовыми возможностями. Наше ритуальное бюро «ЭДЕМ» предоставляет возможность выбрать и купить кресты от стандартных недорогих образцов, до крестов ВИП класса из эксклюзивных пород дерева . Мы поможем создать особенный вид могилы вашего близкого человека.
+            p.catalog-page_text Чтобы купить памятник, крест или заказать его доставку в любой регион Украины, позвоните нашим специалистам, и они помогут вам определиться с выбором и решить все организационные моменты.
+      .form.form--product
+          h4.form_title Оставьте заявку для заказа товара
+          .form_content
+            form(action="#", method="post").form_wrap
+              .form_area
+                  input(type="text" placeholder="Имя")
+                  input(type="text" placeholder="Телефон")
+                  textarea(name="#" placeholder="Комментарий")
+                  button(type="submit").form_btn Отправить   
+          p.form_footer Оставьте свои данные и мы свяжемся с вами в ближайшее время.  
+      include ../includes/footer.pug   
