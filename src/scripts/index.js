@@ -15,11 +15,14 @@ catalog();
 const navMobile = require('./component/nav-mobile.js');
 navMobile();
 
-const productForm = require('./component/product-form.js');
-productForm();
+const formSubmit = require('./component/formSubmit.js');
+formSubmit();
 
 const seoText = require('./component/seoText.js');
 seoText();
 
 const formPopup = require('./component/formPopup.js');
 formPopup();
+
+const law = require('./component/law.js');
+law();

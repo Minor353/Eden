@@ -139,3 +139,9 @@
 .catalog-page_link {
   color: #161B1F;
 }
+
+@media screen and (max-width: 540px) {
+  .catalog-page_advantages-list {
+    padding: 20px 15px;
+  }
+}

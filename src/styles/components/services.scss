@@ -275,6 +275,10 @@
 
 
 @media screen and (max-width: 550px) {
+  .services {
+    margin-top: 30px;
+  }
+
   .services_wrap {
     flex-direction: column;
   }
@@ -293,8 +297,19 @@
   .services_item {
     padding-left: 20px;
     text-align: center;
+
+    img {
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
+  .services_item-img--size {
+
+    img {
+      transform: translateX(0);
+    }
+  }
 
 
 

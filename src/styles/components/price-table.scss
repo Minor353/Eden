@@ -48,3 +48,27 @@
   flex: 1;
   margin: 0 15px;
 }
+
+
+@media screen and (max-width: 540px) {
+  .price-table_wrap {
+    padding: 30px 15px;
+  }
+
+  .price-table_list-item {
+    font-size: 12px;
+    line-height: 18px;
+    align-items: center;
+
+    div:last-child {
+      text-align: right;
+    }
+  }
+
+
+  .price-table_title {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+  }
+}
