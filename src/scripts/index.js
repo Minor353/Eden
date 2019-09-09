@@ -26,3 +26,6 @@ formPopup();
 
 const law = require('./component/law.js');
 law();
+
+const headerNumber = require('./component/headerNumber.js');
+headerNumber();

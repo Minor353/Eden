@@ -18,20 +18,31 @@ header.header
         li.nav_item
           a(href="contact.html").nav_item-link Контакты
     .header_contact
-      img(src="assets/images/icons/phone.svg", alt="phone").header_contact-img
-      a(href="tel:+380960241602").header_contact-link +380960241602 
-      .nav_mobile
-        .overlay
-          nav.overlayMenu
-            ul(role='menu')
-              li
-                a(href='about.html', role='menuitem') О нас
-              li
-                a(href='price.html', role='menuitem') Цены
-              li
-                a(href='catalog-list.html', role='menuitem') Товары
-              li
-                a(href='services.html', role='menuitem') Услуги
-              li
-                a(href='contact.html', role='menuitem') Контакты
-        #navToggle.navBurger(role='navigation')
+      ul.header_contact-list
+        li.header_list-item
+          .header_list-item-decor
+          .header_contact-link.header_contact-link--color Позвоните нам
+          ul.header_contact-list-in
+            li.header_list-in-item
+              a(href="tel:+380960241602").header_contact-link +380960241611
+            li.header_list-in-item
+              a(href="tel:+380960241602").header_contact-link +380960241622 
+            li.header_list-in-item
+              a(href="tel:+380960241602").header_contact-link +380960241633 
+            li.header_list-in-item
+              a(href="tel:+380960241602").header_contact-link +380960241644 
+    .nav_mobile
+      .overlay
+        nav.overlayMenu
+          ul(role='menu')
+            li
+              a(href='about.html', role='menuitem') О нас
+            li
+              a(href='price.html', role='menuitem') Цены
+            li
+              a(href='catalog-list.html', role='menuitem') Товары
+            li
+              a(href='services.html', role='menuitem') Услуги
+            li
+              a(href='contact.html', role='menuitem') Контакты
+      #navToggle.navBurger(role='navigation')
