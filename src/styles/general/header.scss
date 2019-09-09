@@ -69,11 +69,13 @@
   left: 0;
   top: 30px;
   opacity: 0;
+  pointer-events: none;
   transition: 0.3s;
 }
 
 .header_contact-list-in--active {
   opacity: 1;
+  pointer-events: all;
   top: 55px;
   transition: 0.3s;
 }
